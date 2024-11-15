@@ -345,7 +345,7 @@ d51_board_list = [
      "FEATHER_M4", "-D__SAMD51J19A__ -DADAFRUIT_FEATHER_M4_EXPRESS",
      "featherM4/bootloader-feather_m4-v2.0.0-adafruit.5.bin"],
 
-    ["adafruit_feather_m4_can", "feather_m4_can", "Adafruit", "Feather M4 CAN",
+    ["adafruit_smt_test_00", "smt_test_00", "Adafruit", "Feather M4 CAN",
      "0x239A", ["0x80CD", "0x00CD"],
      "FEATHER_M4_CAN", "-D__SAME51J19A__ -DADAFRUIT_FEATHER_M4_EXPRESS -DADAFRUIT_FEATHER_M4_CAN",
      "featherM4/bootloader-feather_m4_express-v2.0.0-adafruit.5.bin"],
@@ -408,7 +408,7 @@ d51_board_list = [
 
 for b in d51_board_list:
     # M4 CAN is the only SAME51
-    if b[0] == "adafruit_feather_m4_can":
+    if b[0] == "adafruit_smt_test_00":
         make_board("SAME51", b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7], b[8])
     else:
         make_board("SAMD51", b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7], b[8])

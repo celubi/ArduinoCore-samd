@@ -20,7 +20,7 @@ build_separator = '-' * 88
 
 FQBN_PREFIX='adafruit:samd:adafruit_'
 
-#default_boards = [ 'metro_m0', 'metro_m4', 'circuitplayground_m0', 'feather_m4_can', 'metro_m0:usbstack=tinyusb', 'metro_m4:speed=120,usbstack=tinyusb' ]
+#default_boards = [ 'metro_m0', 'metro_m4', 'circuitplayground_m0', 'smt_test_00', 'metro_m0:usbstack=tinyusb', 'metro_m4:speed=120,usbstack=tinyusb' ]
 default_boards = [ 'metro_m0', 'metro_m0:usbstack=tinyusb' ]
 build_boards = []
 
